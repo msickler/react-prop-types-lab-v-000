@@ -13,6 +13,10 @@ export default class Product extends React.Component {
   }
 }
 
+Product.defaultProps = {
+  hasWatermark: false 
+}
+
 Product.propTypes= {
   name: PropTypes.string.isRequired,
   producer: PropTypes.string,
